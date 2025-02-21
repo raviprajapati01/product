@@ -25,6 +25,15 @@ app.get('/home', (req,res)=>{
     res.send("Welcome To Home");
 })
 
+const data = {
+    name: 'xyz',
+    email: 'xyz.gmail.com'
+}
+
+app.get('/product', (req, res)=>{
+    res.send(data);
+})
+
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`)
 });
